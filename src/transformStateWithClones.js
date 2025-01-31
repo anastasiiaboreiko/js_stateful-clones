@@ -31,8 +31,8 @@ function transformStateWithClones(state, actions) {
         prevState = {};
         break;
 
-      case 'defolt':
-        prevState = {};
+      default:
+        console.log('Error: there is wrong actioin type');
     }
     stateHistory.push(prevState);
   }
